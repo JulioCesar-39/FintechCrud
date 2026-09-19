@@ -1,0 +1,34 @@
+.home-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.home-container h1 {
+  color: #0055b8;
+  font-size: 2rem;
+}
+
+.home-container p {
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+.home-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.home-card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #00000015;
+}
+
+.home-card h2 {
+  color: #0055b8;
+}    

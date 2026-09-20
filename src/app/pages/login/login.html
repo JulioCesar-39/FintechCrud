@@ -1,55 +1,35 @@
 <div class="content-container">
 
-  <h1>Login</h1>
+    <form>
+      <label fo="email">
+        Login
+      </label>
 
-  <p>
-    Acesse sua conta da Fintech CRUD.
-  </p>
+      <br>
 
-  <form>
-
-    <label for="email">
-      Login
-    </label>
-
-    <br>
-
-    <input
-      class="input-simples"
-      id="email"
-      name="email"
-      type="email"
+      <input class="input-simples" id="email" name="email"
+      type="emial"
       placeholder="Digite seu email"
       [(ngModel)]="login"
       (keyup)="validarFormulario()"
-      (keydown)="teclaDigitada($event)"
-    />
+      />
+  
+      <label for="input-senha">Senha</label>
 
-    <label for="input-senha">
-      Senha
-    </label>
+      <br>
 
-    <br>
-
-    <input
-      class="input-simples"
-      id="input-senha"
-      name="input-senha"
+      <input class="input-simples" id="input-senha" name="input-senha"
       type="password"
       placeholder="Digite sua senha"
       [(ngModel)]="senha"
       (keyup)="validarFormulario()"
-    />
+       />
 
-    <button
-      type="button"
-      class="input-submeter"
-      [disabled]="botaoDesabilitado"
-      (click)="fazerLogin()"
-    >
-      Confirmar
-    </button>
+       <button class="input-submeter" [disabled]="botaoDesabilitado"
+       (click)="fazerLogin()">
+       confirmar
+      </button>
 
-  </form>
-
+    </form>
+    
 </div>

@@ -15,5 +15,5 @@ import { FooterComponent } from './shared/footer/footer';
   styleUrl: './app.css'
 })
 export class AppComponent  {
-
+  titulo = 'fintechcrud';
 }
